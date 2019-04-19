@@ -1,0 +1,51 @@
+//big button
+.big-button {
+    background: $purple;
+    border: none;
+    border-bottom: .6rem solid darken($purple, 10%) ;
+    color: white ;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $s-size;
+    padding: 2.4rem ;
+    width: 100%;
+
+}
+.big-button:disabled{
+    opacity: .5
+}
+
+@media (min-width:45rem){
+    .big-button{
+        margin-bottom: $xl-size
+    }
+
+}
+
+//add option button
+ .button{
+     background: $purple;
+     color: white;
+     font-weight: 500;
+     border: 0;
+     border-bottom: .3rem solid darken($purple, 10%);
+     padding: $s-size;
+     
+     
+
+}
+.button:not(.button--link) {
+    @media screen and (max-width: 440px){
+        font-size: 14px;
+    }
+}
+
+// remove buttons including remove all
+.button--link{
+    background: none;
+    border: 0;
+    color: $off-white;
+    padding: 0;
+    
+
+}
